@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:object="${user}">
+    <!-- *{...}选择表达式一般跟在th:object后，直接选择object中的属性-->
+    <input type="hidden" th:id="*{id}" name="id">
+    用户名：<input type="text" th:value="*{username}" name="username" /><br /><br />
+    密码：<input type="text" th:value="*{password}" name="password"/>
+</form>
+
+</body>
+</html>

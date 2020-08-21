@@ -1,0 +1,13 @@
+mybatis:
+  type-aliases-package: com.qf.springboot02.pojo
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/world?serverTimezone=Asia/Shanghai
+    username: root
+    password: 729186
+    driver-class-name: com.mysql.cj.jdbc.Driver
